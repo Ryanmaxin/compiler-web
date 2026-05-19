@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Joos Frontend
 
 This app keeps the simple left/right layout, but the right side is now an
@@ -60,6 +59,3 @@ The frontend calls `POST /api/run`, which:
 3. captures the generated assembly
 4. assembles, links, and runs the produced binary
 5. returns output to the UI
-=======
-# compiler-web
->>>>>>> 4b95065f7228743fb99d2d231114dd8f07180665
