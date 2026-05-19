@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 38 40% 96%;
+    --foreground: 215 39% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 39% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 39% 14%;
+    --primary: 19 89% 56%;
+    --primary-foreground: 48 100% 98%;
+    --secondary: 188 63% 92%;
+    --secondary-foreground: 201 67% 16%;
+    --muted: 42 34% 90%;
+    --muted-foreground: 217 19% 39%;
+    --accent: 31 77% 91%;
+    --accent-foreground: 215 39% 14%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 29 24% 80%;
+    --input: 29 24% 80%;
+    --ring: 19 89% 56%;
+    --radius: 1.35rem;
+    color-scheme: light;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-background font-sans text-foreground antialiased;
+    margin: 0;
+    min-width: 320px;
+    background-image:
+      radial-gradient(circle at top left, rgba(251, 191, 36, 0.24), transparent 30%),
+      radial-gradient(circle at top right, rgba(34, 211, 238, 0.22), transparent 28%),
+      linear-gradient(180deg, rgba(255, 252, 245, 0.92), rgba(248, 245, 237, 0.98)),
+      linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size:
+      auto,
+      auto,
+      auto,
+      28px 28px,
+      28px 28px;
+    background-position:
+      center,
+      center,
+      center,
+      center,
+      center;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  code,
+  pre {
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  ::selection {
+    background: rgba(249, 115, 22, 0.22);
+  }
+}
